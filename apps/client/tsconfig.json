@@ -1,0 +1,6 @@
+{
+  "extends": "tsconfig/client.json",
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
