@@ -4,14 +4,30 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"],
-      "env": ["NODE_ENV", "PORT"]
+      "env": [
+        "NODE_ENV",
+        "PORT",
+        "DATABASE_URL",
+        "REPLICHAT_PUSHER_APP_ID",
+        "REPLICHAT_PUSHER_KEY",
+        "REPLICHAT_PUSHER_SECRET",
+        "REPLICHAT_PUSHER_CLUSTER"
+      ]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
       "cache": false,
-      "env": ["NODE_ENV", "PORT"]
+      "env": [
+        "NODE_ENV",
+        "PORT",
+        "DATABASE_URL",
+        "REPLICHAT_PUSHER_APP_ID",
+        "REPLICHAT_PUSHER_KEY",
+        "REPLICHAT_PUSHER_SECRET",
+        "REPLICHAT_PUSHER_CLUSTER"
+      ]
     },
     "typecheck": {
       "outputs": []
